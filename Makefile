@@ -3,8 +3,8 @@
 
 CC = g++ -g -Wno-float-conversion -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable
 
-CC_DEBUG = @$(CC) -std=c++14
-CC_RELEASE = @$(CC) -std=c++14 -O3 -DNDEBUG
+CC_DEBUG = @$(CC) -std=c++17
+CC_RELEASE = @$(CC) -std=c++17 -O3 -DNDEBUG
 
 G_DEPS = $(wildcard *.cpp *.h apps/* src/* include/*)
 
